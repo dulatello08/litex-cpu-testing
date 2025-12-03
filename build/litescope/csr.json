@@ -1,0 +1,112 @@
+{
+    "csr_bases": {
+        "analyzer": 4096,
+        "identifier_mem": 6144,
+        "main": 8192
+    },
+    "csr_registers": {
+        "analyzer_mux_csr_4404726672": {
+            "addr": 4096,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_trigger_csr_4404727632": {
+            "addr": 4100,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_trigger_csr_4404728272": {
+            "addr": 4104,
+            "size": 1,
+            "type": "ro"
+        },
+        "analyzer_trigger_csr_4404856544": {
+            "addr": 4108,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_trigger_csr_4404936784": {
+            "addr": 4112,
+            "size": 2,
+            "type": "rw"
+        },
+        "analyzer_trigger_csr_4404937088": {
+            "addr": 4120,
+            "size": 2,
+            "type": "rw"
+        },
+        "analyzer_trigger_csr_4404728592": {
+            "addr": 4128,
+            "size": 1,
+            "type": "ro"
+        },
+        "analyzer_subsampler_csr_4404417968": {
+            "addr": 4132,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_storage_csr_4404745616": {
+            "addr": 4136,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_storage_csr_4404938304": {
+            "addr": 4140,
+            "size": 1,
+            "type": "ro"
+        },
+        "analyzer_storage_csr_4404745888": {
+            "addr": 4144,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_storage_csr_4405068112": {
+            "addr": 4148,
+            "size": 1,
+            "type": "rw"
+        },
+        "analyzer_storage_csr_4404938608": {
+            "addr": 4152,
+            "size": 1,
+            "type": "ro"
+        },
+        "analyzer_storage_csr_4404417680": {
+            "addr": 4156,
+            "size": 1,
+            "type": "ro"
+        },
+        "main_user_inputs": {
+            "addr": 8192,
+            "size": 1,
+            "type": "rw"
+        },
+        "main_user_outputs": {
+            "addr": 8196,
+            "size": 1,
+            "type": "ro"
+        }
+    },
+    "constants": {
+        "config_platform_name": "gen_litescope",
+        "config_clock_frequency": 25000000,
+        "config_cpu_type_none": null,
+        "config_cpu_variant_standard": null,
+        "config_cpu_family": null,
+        "config_cpu_name": null,
+        "config_cpu_human_name": "unknown",
+        "config_identifier": "litescope standalone 2025-12-03 12:21:58",
+        "config_csr_data_width": 32,
+        "config_csr_alignment": 32,
+        "config_bus_standard": "wishbone",
+        "config_bus_data_width": 32,
+        "config_bus_address_width": 32,
+        "config_bus_bursting": 0
+    },
+    "memories": {
+        "csr": {
+            "base": 0,
+            "size": 65536,
+            "type": "io"
+        }
+    }
+}

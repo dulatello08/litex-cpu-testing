@@ -1,0 +1,5 @@
+config,None,data_width,64
+config,None,depth,512
+config,None,samplerate,1000000000000
+signal,0,user_probe,32
+signal,0,litescopesoc_csrstorage0,32
