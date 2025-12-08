@@ -19,6 +19,10 @@ build/litescope/gateware/litescope_core.v: scripts/gen_litescope.py
 	# Fix LUT4 parameter case for Yosys
 	sed 's/\.init (/.INIT (/g' build/litescope/gateware/litescope_core.v > build/litescope/gateware/litescope_core.v.tmp && mv build/litescope/gateware/litescope_core.v.tmp build/litescope/gateware/litescope_core.v
 
+# Generate RISC-V SoC
+soc: scripts/gen_soc.py
+	export PATH="$(PWD)/toolchain/xpack-riscv-none-elf-gcc-13.2.0-2/bin:$(PATH)" && $(PYTHON) scripts/gen_soc.py
+
 # Synthesis
 $(PROJ).json: $(SRCS) build/litescope/gateware/litescope_core.v
 	# Copy init file to current dir for yosys to find it
