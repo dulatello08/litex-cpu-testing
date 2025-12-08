@@ -1,0 +1,16 @@
+certifi==2025.11.12
+charset-normalizer==3.4.4
+colorama==0.4.6
+idna==3.11
+litedram==2024.12
+litescope==2024.12
+litex==2024.12
+migen==0.9.2
+packaging==25.0
+pyserial==3.5
+pythondata-cpu-vexriscv @ git+https://github.com/litex-hub/pythondata-cpu-vexriscv.git@1979a644dbe64d8d32dfbdd970dccee6add63723
+pythondata-software-compiler_rt @ git+https://github.com/litex-hub/pythondata-software-compiler_rt.git@fcb03245613ccf3079cc833a701f13d0beaae09d
+pythondata-software-picolibc @ git+https://github.com/litex-hub/pythondata-software-picolibc.git@a5e11229885a87083ec54034f8d693ba52ea2718
+PyYAML==6.0.3
+requests==2.32.5
+urllib3==2.5.0

@@ -21,7 +21,7 @@ build/litescope/gateware/litescope_core.v: scripts/gen_litescope.py
 
 # Generate RISC-V SoC
 soc: scripts/gen_soc.py
-	export PATH="$(PWD)/toolchain/xpack-riscv-none-elf-gcc-13.2.0-2/bin:$(PATH)" && $(PYTHON) scripts/gen_soc.py
+	PYTHON=$(PWD)/.venv/bin/python3 $(PYTHON) scripts/gen_soc.py
 
 # Synthesis
 $(PROJ).json: $(SRCS) build/litescope/gateware/litescope_core.v

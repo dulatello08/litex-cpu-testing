@@ -4,49 +4,6 @@ import os
 import argparse
 import sys
 
-# Monkeypatching to fix Python 3.14 / Migen name extraction issues
-from litex.soc.interconnect import csr
-from migen.fhdl import structure
-
-# Patch _CSRBase (covers CSR, CSRStorage, CSRStatus)
-_original_CSRBase_init = csr._CSRBase.__init__
-def _new_CSRBase_init(self, *args, **kwargs):
-    try:
-        _original_CSRBase_init(self, *args, **kwargs)
-    except ValueError:
-        name = f"csr_{id(self)}"
-        if 'name' in kwargs:
-            kwargs['name'] = name
-        else:
-            args_list = list(args)
-            if len(args_list) > 1:
-                args_list[1] = name
-            else:
-                kwargs['name'] = name
-            args = tuple(args_list)
-        _original_CSRBase_init(self, *args, **kwargs)
-
-csr._CSRBase.__init__ = _new_CSRBase_init
-
-# Patch ClockDomain
-_cd_counter = 0
-_original_ClockDomain_init = structure.ClockDomain.__init__
-def _new_ClockDomain_init(self, name=None, reset_less=False):
-    global _cd_counter
-    if name is None:
-        try:
-            _original_ClockDomain_init(self, name, reset_less)
-        except ValueError:
-            _cd_counter += 1
-            name = f"cd_fallback_{_cd_counter}"
-            print(f"DEBUG: Patching ClockDomain name to {name}")
-            _original_ClockDomain_init(self, name, reset_less)
-    else:
-        _original_ClockDomain_init(self, name, reset_less)
-
-structure.ClockDomain.__init__ = _new_ClockDomain_init
-
-
 from migen import *
 from litex.soc.cores.clock import *
 from litex.soc.integration.soc import SoCRegion
@@ -59,7 +16,7 @@ from litex.build.generic_platform import *
 from litex.build.lattice import LatticePlatform
 from litex.build.io import DDROutput
 
-# Define minimal ULX3S platform (reused from gen_litescope.py but expanded for SDRAM)
+# Define minimal ULX3S platform
 _io = [
     ("clk_25mhz", 0, Pins("G2"), IOStandard("LVCMOS33")),
     ("rst", 0, Pins("R1"), IOStandard("LVCMOS33")), # FIRE1 as reset
@@ -87,8 +44,8 @@ class Platform(LatticePlatform):
     default_clk_name   = "clk_25mhz"
     default_clk_period = 1e9/25e6
 
-    def __init__(self, device="LFE5U-85F", **kwargs):
-        LatticePlatform.__init__(self, device, _io, **kwargs)
+    def __init__(self, device="LFE5U-85F-6BG381C", **kwargs):
+        LatticePlatform.__init__(self, device, _io, toolchain="trellis", **kwargs)
 
 class _CRG(Module):
     def __init__(self, platform, sys_clk_freq, sdram_rate="1:1"):
@@ -109,13 +66,6 @@ class _CRG(Module):
         pll.create_clkout(self.cd_sys,    sys_clk_freq)
         
         # 166MHz SDRAM Clock
-        # We need a separate domain for the SDRAM controller if it runs faster
-        # But for GEn5SDRPHY, it typically expects to run in sys_clk or sys2x depending on rate.
-        # However, we want split domains: CPU@50, SDRAM@166.
-        # LiteDRAM's GEn5SDRPHY is designed for SDR.
-        # If we want the PHY to run at 166MHz, we need to feed it that clock.
-        
-        # Let's define specific domains for SDRAM
         self.clock_domains.cd_sdram    = ClockDomain()
         self.clock_domains.cd_sdram_ps = ClockDomain(reset_less=True)
         
@@ -132,9 +82,9 @@ class BaseSoC(SoCCore):
         # SoCCore
         SoCCore.__init__(self, platform, clk_freq=sys_clk_freq,
             cpu_type="vexriscv",
-            integrated_main_ram_size=0x0, # Disable internal SRAM, use SDRAM
-            integrated_rom_size=0x8000,   # 32KB ROM for BIOS
-            uart_name="serial")
+            integrated_main_ram_size=0x0,
+            integrated_rom_size=0x8000,
+        )
 
         # CRG
         self.submodules.crg = _CRG(platform, sys_clk_freq)
@@ -150,15 +100,13 @@ class BaseSoC(SoCCore):
             l2_cache_min_data_width = 128,
             l2_cache_reverse        = False
         )
-        # Important: Tell LiteX that the SDRAM PHY is in the 'sdram' clock domain
-        # This triggers the automatic Wishbone CDC insertion.
         self.sdrphy.clock_domain = "sdram"
 
 def main():
     platform = Platform()
     soc = BaseSoC(platform)
     builder = Builder(soc, output_dir="build/soc", csr_csv="csr.csv")
-    builder.build(build_name="riscv_soc", compile_software=False)
+    builder.build(build_name="riscv_soc")
 
 if __name__ == "__main__":
     main()

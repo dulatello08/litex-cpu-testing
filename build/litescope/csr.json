@@ -5,72 +5,72 @@
         "main": 8192
     },
     "csr_registers": {
-        "analyzer_mux_csr_4404726672": {
+        "analyzer_mux_csr_4397204752": {
             "addr": 4096,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_trigger_csr_4404727632": {
+        "analyzer_trigger_csr_4397236944": {
             "addr": 4100,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_trigger_csr_4404728272": {
+        "analyzer_trigger_csr_4397238032": {
             "addr": 4104,
             "size": 1,
             "type": "ro"
         },
-        "analyzer_trigger_csr_4404856544": {
+        "analyzer_trigger_csr_4397239440": {
             "addr": 4108,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_trigger_csr_4404936784": {
+        "analyzer_trigger_csr_4397241616": {
             "addr": 4112,
             "size": 2,
             "type": "rw"
         },
-        "analyzer_trigger_csr_4404937088": {
+        "analyzer_trigger_csr_4397242640": {
             "addr": 4120,
             "size": 2,
             "type": "rw"
         },
-        "analyzer_trigger_csr_4404728592": {
+        "analyzer_trigger_csr_4397243728": {
             "addr": 4128,
             "size": 1,
             "type": "ro"
         },
-        "analyzer_subsampler_csr_4404417968": {
+        "analyzer_subsampler_csr_4397407376": {
             "addr": 4132,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_storage_csr_4404745616": {
+        "analyzer_storage_csr_4397469008": {
             "addr": 4136,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_storage_csr_4404938304": {
+        "analyzer_storage_csr_4397470224": {
             "addr": 4140,
             "size": 1,
             "type": "ro"
         },
-        "analyzer_storage_csr_4404745888": {
+        "analyzer_storage_csr_4397025040": {
             "addr": 4144,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_storage_csr_4405068112": {
+        "analyzer_storage_csr_4397473104": {
             "addr": 4148,
             "size": 1,
             "type": "rw"
         },
-        "analyzer_storage_csr_4404938608": {
+        "analyzer_storage_csr_4397474128": {
             "addr": 4152,
             "size": 1,
             "type": "ro"
         },
-        "analyzer_storage_csr_4404417680": {
+        "analyzer_storage_csr_4397475984": {
             "addr": 4156,
             "size": 1,
             "type": "ro"
@@ -94,7 +94,7 @@
         "config_cpu_family": null,
         "config_cpu_name": null,
         "config_cpu_human_name": "unknown",
-        "config_identifier": "litescope standalone 2025-12-03 12:21:58",
+        "config_identifier": "litescope standalone 2025-12-04 11:10:19",
         "config_csr_data_width": 32,
         "config_csr_alignment": 32,
         "config_bus_standard": "wishbone",

@@ -8,8 +8,8 @@
 //
 // Filename   : litescope_core.v
 // Device     : LFE5U-85F
-// LiteX sha1 : --------
-// Date       : 2025-12-03 12:21:58
+// LiteX sha1 : 5305f07
+// Date       : 2025-12-04 11:10:19
 //------------------------------------------------------------------------------
 
 `timescale 1ns / 1ps
@@ -114,66 +114,66 @@ LiteScopeSoC
 
 wire   [13:0] builder_adr;
 wire          builder_csrbank0;
-wire          builder_csrbank0_mux_csr_44047266720_r;
-reg           builder_csrbank0_mux_csr_44047266720_re = 1'd0;
-wire          builder_csrbank0_mux_csr_44047266720_w;
-reg           builder_csrbank0_mux_csr_44047266720_we = 1'd0;
-wire   [31:0] builder_csrbank0_storage_csr_4404417680_r;
-reg           builder_csrbank0_storage_csr_4404417680_re = 1'd0;
-wire   [31:0] builder_csrbank0_storage_csr_4404417680_w;
-reg           builder_csrbank0_storage_csr_4404417680_we = 1'd0;
-wire          builder_csrbank0_storage_csr_44047456160_r;
-reg           builder_csrbank0_storage_csr_44047456160_re = 1'd0;
-wire          builder_csrbank0_storage_csr_44047456160_w;
-reg           builder_csrbank0_storage_csr_44047456160_we = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_44047458880_r;
-reg           builder_csrbank0_storage_csr_44047458880_re = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_44047458880_w;
-reg           builder_csrbank0_storage_csr_44047458880_we = 1'd0;
-wire          builder_csrbank0_storage_csr_4404938304_r;
-reg           builder_csrbank0_storage_csr_4404938304_re = 1'd0;
-wire          builder_csrbank0_storage_csr_4404938304_w;
-reg           builder_csrbank0_storage_csr_4404938304_we = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_4404938608_r;
-reg           builder_csrbank0_storage_csr_4404938608_re = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_4404938608_w;
-reg           builder_csrbank0_storage_csr_4404938608_we = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_44050681120_r;
-reg           builder_csrbank0_storage_csr_44050681120_re = 1'd0;
-wire    [9:0] builder_csrbank0_storage_csr_44050681120_w;
-reg           builder_csrbank0_storage_csr_44050681120_we = 1'd0;
-wire   [15:0] builder_csrbank0_subsampler_csr_44044179680_r;
-reg           builder_csrbank0_subsampler_csr_44044179680_re = 1'd0;
-wire   [15:0] builder_csrbank0_subsampler_csr_44044179680_w;
-reg           builder_csrbank0_subsampler_csr_44044179680_we = 1'd0;
-wire          builder_csrbank0_trigger_csr_44047276320_r;
-reg           builder_csrbank0_trigger_csr_44047276320_re = 1'd0;
-wire          builder_csrbank0_trigger_csr_44047276320_w;
-reg           builder_csrbank0_trigger_csr_44047276320_we = 1'd0;
-wire          builder_csrbank0_trigger_csr_4404728272_r;
-reg           builder_csrbank0_trigger_csr_4404728272_re = 1'd0;
-wire          builder_csrbank0_trigger_csr_4404728272_w;
-reg           builder_csrbank0_trigger_csr_4404728272_we = 1'd0;
-wire          builder_csrbank0_trigger_csr_4404728592_r;
-reg           builder_csrbank0_trigger_csr_4404728592_re = 1'd0;
-wire          builder_csrbank0_trigger_csr_4404728592_w;
-reg           builder_csrbank0_trigger_csr_4404728592_we = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049367840_r;
-reg           builder_csrbank0_trigger_csr_44049367840_re = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049367840_w;
-reg           builder_csrbank0_trigger_csr_44049367840_we = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049367841_r;
-reg           builder_csrbank0_trigger_csr_44049367841_re = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049367841_w;
-reg           builder_csrbank0_trigger_csr_44049367841_we = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049370880_r;
-reg           builder_csrbank0_trigger_csr_44049370880_re = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049370880_w;
-reg           builder_csrbank0_trigger_csr_44049370880_we = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049370881_r;
-reg           builder_csrbank0_trigger_csr_44049370881_re = 1'd0;
-wire   [31:0] builder_csrbank0_trigger_csr_44049370881_w;
-reg           builder_csrbank0_trigger_csr_44049370881_we = 1'd0;
+wire          builder_csrbank0_mux_csr_43972047520_r;
+reg           builder_csrbank0_mux_csr_43972047520_re = 1'd0;
+wire          builder_csrbank0_mux_csr_43972047520_w;
+reg           builder_csrbank0_mux_csr_43972047520_we = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_43970250400_r;
+reg           builder_csrbank0_storage_csr_43970250400_re = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_43970250400_w;
+reg           builder_csrbank0_storage_csr_43970250400_we = 1'd0;
+wire          builder_csrbank0_storage_csr_43974690080_r;
+reg           builder_csrbank0_storage_csr_43974690080_re = 1'd0;
+wire          builder_csrbank0_storage_csr_43974690080_w;
+reg           builder_csrbank0_storage_csr_43974690080_we = 1'd0;
+wire          builder_csrbank0_storage_csr_4397470224_r;
+reg           builder_csrbank0_storage_csr_4397470224_re = 1'd0;
+wire          builder_csrbank0_storage_csr_4397470224_w;
+reg           builder_csrbank0_storage_csr_4397470224_we = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_43974731040_r;
+reg           builder_csrbank0_storage_csr_43974731040_re = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_43974731040_w;
+reg           builder_csrbank0_storage_csr_43974731040_we = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_4397474128_r;
+reg           builder_csrbank0_storage_csr_4397474128_re = 1'd0;
+wire    [9:0] builder_csrbank0_storage_csr_4397474128_w;
+reg           builder_csrbank0_storage_csr_4397474128_we = 1'd0;
+wire   [31:0] builder_csrbank0_storage_csr_4397475984_r;
+reg           builder_csrbank0_storage_csr_4397475984_re = 1'd0;
+wire   [31:0] builder_csrbank0_storage_csr_4397475984_w;
+reg           builder_csrbank0_storage_csr_4397475984_we = 1'd0;
+wire   [15:0] builder_csrbank0_subsampler_csr_43974073760_r;
+reg           builder_csrbank0_subsampler_csr_43974073760_re = 1'd0;
+wire   [15:0] builder_csrbank0_subsampler_csr_43974073760_w;
+reg           builder_csrbank0_subsampler_csr_43974073760_we = 1'd0;
+wire          builder_csrbank0_trigger_csr_43972369440_r;
+reg           builder_csrbank0_trigger_csr_43972369440_re = 1'd0;
+wire          builder_csrbank0_trigger_csr_43972369440_w;
+reg           builder_csrbank0_trigger_csr_43972369440_we = 1'd0;
+wire          builder_csrbank0_trigger_csr_4397238032_r;
+reg           builder_csrbank0_trigger_csr_4397238032_re = 1'd0;
+wire          builder_csrbank0_trigger_csr_4397238032_w;
+reg           builder_csrbank0_trigger_csr_4397238032_we = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972416160_r;
+reg           builder_csrbank0_trigger_csr_43972416160_re = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972416160_w;
+reg           builder_csrbank0_trigger_csr_43972416160_we = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972416161_r;
+reg           builder_csrbank0_trigger_csr_43972416161_re = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972416161_w;
+reg           builder_csrbank0_trigger_csr_43972416161_we = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972426400_r;
+reg           builder_csrbank0_trigger_csr_43972426400_re = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972426400_w;
+reg           builder_csrbank0_trigger_csr_43972426400_we = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972426401_r;
+reg           builder_csrbank0_trigger_csr_43972426401_re = 1'd0;
+wire   [31:0] builder_csrbank0_trigger_csr_43972426401_w;
+reg           builder_csrbank0_trigger_csr_43972426401_we = 1'd0;
+wire          builder_csrbank0_trigger_csr_4397243728_r;
+reg           builder_csrbank0_trigger_csr_4397243728_re = 1'd0;
+wire          builder_csrbank0_trigger_csr_4397243728_w;
+reg           builder_csrbank0_trigger_csr_4397243728_we = 1'd0;
 wire          builder_csrbank1;
 wire   [31:0] builder_csrbank1_user_inputs0_r;
 reg           builder_csrbank1_user_inputs0_re = 1'd0;
@@ -489,10 +489,10 @@ wire          litescopesoc_litescopeanalyzer_trigger_asyncfifo_memory2;
 wire  [129:0] litescopesoc_litescopeanalyzer_trigger_asyncfifo_memory3;
 wire    [3:0] litescopesoc_litescopeanalyzer_trigger_asyncfifo_memory4;
 wire  [129:0] litescopesoc_litescopeanalyzer_trigger_asyncfifo_memory5;
-wire          litescopesoc_litescopeanalyzer_trigger_csr_4404856544_r;
-reg           litescopesoc_litescopeanalyzer_trigger_csr_4404856544_re = 1'd0;
-reg           litescopesoc_litescopeanalyzer_trigger_csr_4404856544_w = 1'd0;
-reg           litescopesoc_litescopeanalyzer_trigger_csr_4404856544_we = 1'd0;
+wire          litescopesoc_litescopeanalyzer_trigger_csr_4397239440_r;
+reg           litescopesoc_litescopeanalyzer_trigger_csr_4397239440_re = 1'd0;
+reg           litescopesoc_litescopeanalyzer_trigger_csr_4397239440_w = 1'd0;
+reg           litescopesoc_litescopeanalyzer_trigger_csr_4397239440_we = 1'd0;
 wire          litescopesoc_litescopeanalyzer_trigger_csrstatus00;
 wire          litescopesoc_litescopeanalyzer_trigger_csrstatus01;
 reg           litescopesoc_litescopeanalyzer_trigger_csrstatus02 = 1'd0;
@@ -888,7 +888,7 @@ always @(*) begin
         end
     endcase
 end
-assign litescopesoc_litescopeanalyzer_trigger_endpoint0_valid1 = litescopesoc_litescopeanalyzer_trigger_csr_4404856544_re;
+assign litescopesoc_litescopeanalyzer_trigger_endpoint0_valid1 = litescopesoc_litescopeanalyzer_trigger_csr_4397239440_re;
 assign litescopesoc_litescopeanalyzer_trigger_endpoint0_payload_mask = litescopesoc_litescopeanalyzer_trigger_csrstorage10;
 assign litescopesoc_litescopeanalyzer_trigger_endpoint0_payload_value = litescopesoc_litescopeanalyzer_trigger_csrstorage20;
 assign litescopesoc_litescopeanalyzer_trigger_csrstatus10 = (~litescopesoc_litescopeanalyzer_trigger_endpoint0_ready1);
@@ -1165,170 +1165,170 @@ always @(*) begin
     endcase
 end
 assign builder_csrbank0 = (builder_interface0_bank_bus_adr[13:9] == 2'd2);
-assign builder_csrbank0_mux_csr_44047266720_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_mux_csr_43972047520_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_mux_csr_44047266720_re <= 1'd0;
-    builder_csrbank0_mux_csr_44047266720_we <= 1'd0;
+    builder_csrbank0_mux_csr_43972047520_re <= 1'd0;
+    builder_csrbank0_mux_csr_43972047520_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 1'd0))) begin
-        builder_csrbank0_mux_csr_44047266720_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_mux_csr_44047266720_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_mux_csr_43972047520_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_mux_csr_43972047520_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_44047276320_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_trigger_csr_43972369440_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_44047276320_re <= 1'd0;
-    builder_csrbank0_trigger_csr_44047276320_we <= 1'd0;
+    builder_csrbank0_trigger_csr_43972369440_re <= 1'd0;
+    builder_csrbank0_trigger_csr_43972369440_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 1'd1))) begin
-        builder_csrbank0_trigger_csr_44047276320_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_44047276320_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_43972369440_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_43972369440_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_4404728272_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_trigger_csr_4397238032_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_4404728272_re <= 1'd0;
-    builder_csrbank0_trigger_csr_4404728272_we <= 1'd0;
+    builder_csrbank0_trigger_csr_4397238032_re <= 1'd0;
+    builder_csrbank0_trigger_csr_4397238032_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 2'd2))) begin
-        builder_csrbank0_trigger_csr_4404728272_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_4404728272_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_4397238032_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_4397238032_we <= builder_interface0_bank_bus_re;
     end
 end
-assign litescopesoc_litescopeanalyzer_trigger_csr_4404856544_r = builder_interface0_bank_bus_dat_w[0];
+assign litescopesoc_litescopeanalyzer_trigger_csr_4397239440_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    litescopesoc_litescopeanalyzer_trigger_csr_4404856544_re <= 1'd0;
-    litescopesoc_litescopeanalyzer_trigger_csr_4404856544_we <= 1'd0;
+    litescopesoc_litescopeanalyzer_trigger_csr_4397239440_re <= 1'd0;
+    litescopesoc_litescopeanalyzer_trigger_csr_4397239440_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 2'd3))) begin
-        litescopesoc_litescopeanalyzer_trigger_csr_4404856544_re <= builder_interface0_bank_bus_we;
-        litescopesoc_litescopeanalyzer_trigger_csr_4404856544_we <= builder_interface0_bank_bus_re;
+        litescopesoc_litescopeanalyzer_trigger_csr_4397239440_re <= builder_interface0_bank_bus_we;
+        litescopesoc_litescopeanalyzer_trigger_csr_4397239440_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_44049367841_r = builder_interface0_bank_bus_dat_w[31:0];
+assign builder_csrbank0_trigger_csr_43972416161_r = builder_interface0_bank_bus_dat_w[31:0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_44049367841_re <= 1'd0;
-    builder_csrbank0_trigger_csr_44049367841_we <= 1'd0;
+    builder_csrbank0_trigger_csr_43972416161_re <= 1'd0;
+    builder_csrbank0_trigger_csr_43972416161_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 3'd4))) begin
-        builder_csrbank0_trigger_csr_44049367841_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_44049367841_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_43972416161_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_43972416161_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_44049367840_r = builder_interface0_bank_bus_dat_w[31:0];
+assign builder_csrbank0_trigger_csr_43972416160_r = builder_interface0_bank_bus_dat_w[31:0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_44049367840_re <= 1'd0;
-    builder_csrbank0_trigger_csr_44049367840_we <= 1'd0;
+    builder_csrbank0_trigger_csr_43972416160_re <= 1'd0;
+    builder_csrbank0_trigger_csr_43972416160_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 3'd5))) begin
-        builder_csrbank0_trigger_csr_44049367840_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_44049367840_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_43972416160_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_43972416160_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_44049370881_r = builder_interface0_bank_bus_dat_w[31:0];
+assign builder_csrbank0_trigger_csr_43972426401_r = builder_interface0_bank_bus_dat_w[31:0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_44049370881_re <= 1'd0;
-    builder_csrbank0_trigger_csr_44049370881_we <= 1'd0;
+    builder_csrbank0_trigger_csr_43972426401_re <= 1'd0;
+    builder_csrbank0_trigger_csr_43972426401_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 3'd6))) begin
-        builder_csrbank0_trigger_csr_44049370881_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_44049370881_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_43972426401_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_43972426401_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_44049370880_r = builder_interface0_bank_bus_dat_w[31:0];
+assign builder_csrbank0_trigger_csr_43972426400_r = builder_interface0_bank_bus_dat_w[31:0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_44049370880_re <= 1'd0;
-    builder_csrbank0_trigger_csr_44049370880_we <= 1'd0;
+    builder_csrbank0_trigger_csr_43972426400_re <= 1'd0;
+    builder_csrbank0_trigger_csr_43972426400_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 3'd7))) begin
-        builder_csrbank0_trigger_csr_44049370880_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_44049370880_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_43972426400_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_43972426400_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_trigger_csr_4404728592_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_trigger_csr_4397243728_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_trigger_csr_4404728592_re <= 1'd0;
-    builder_csrbank0_trigger_csr_4404728592_we <= 1'd0;
+    builder_csrbank0_trigger_csr_4397243728_re <= 1'd0;
+    builder_csrbank0_trigger_csr_4397243728_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd8))) begin
-        builder_csrbank0_trigger_csr_4404728592_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_trigger_csr_4404728592_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_trigger_csr_4397243728_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_trigger_csr_4397243728_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_subsampler_csr_44044179680_r = builder_interface0_bank_bus_dat_w[15:0];
+assign builder_csrbank0_subsampler_csr_43974073760_r = builder_interface0_bank_bus_dat_w[15:0];
 always @(*) begin
-    builder_csrbank0_subsampler_csr_44044179680_re <= 1'd0;
-    builder_csrbank0_subsampler_csr_44044179680_we <= 1'd0;
+    builder_csrbank0_subsampler_csr_43974073760_re <= 1'd0;
+    builder_csrbank0_subsampler_csr_43974073760_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd9))) begin
-        builder_csrbank0_subsampler_csr_44044179680_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_subsampler_csr_44044179680_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_subsampler_csr_43974073760_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_subsampler_csr_43974073760_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_44047456160_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_storage_csr_43974690080_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_storage_csr_44047456160_re <= 1'd0;
-    builder_csrbank0_storage_csr_44047456160_we <= 1'd0;
+    builder_csrbank0_storage_csr_43974690080_re <= 1'd0;
+    builder_csrbank0_storage_csr_43974690080_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd10))) begin
-        builder_csrbank0_storage_csr_44047456160_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_44047456160_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_43974690080_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_43974690080_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_4404938304_r = builder_interface0_bank_bus_dat_w[0];
+assign builder_csrbank0_storage_csr_4397470224_r = builder_interface0_bank_bus_dat_w[0];
 always @(*) begin
-    builder_csrbank0_storage_csr_4404938304_re <= 1'd0;
-    builder_csrbank0_storage_csr_4404938304_we <= 1'd0;
+    builder_csrbank0_storage_csr_4397470224_re <= 1'd0;
+    builder_csrbank0_storage_csr_4397470224_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd11))) begin
-        builder_csrbank0_storage_csr_4404938304_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_4404938304_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_4397470224_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_4397470224_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_44047458880_r = builder_interface0_bank_bus_dat_w[9:0];
+assign builder_csrbank0_storage_csr_43970250400_r = builder_interface0_bank_bus_dat_w[9:0];
 always @(*) begin
-    builder_csrbank0_storage_csr_44047458880_re <= 1'd0;
-    builder_csrbank0_storage_csr_44047458880_we <= 1'd0;
+    builder_csrbank0_storage_csr_43970250400_re <= 1'd0;
+    builder_csrbank0_storage_csr_43970250400_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd12))) begin
-        builder_csrbank0_storage_csr_44047458880_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_44047458880_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_43970250400_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_43970250400_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_44050681120_r = builder_interface0_bank_bus_dat_w[9:0];
+assign builder_csrbank0_storage_csr_43974731040_r = builder_interface0_bank_bus_dat_w[9:0];
 always @(*) begin
-    builder_csrbank0_storage_csr_44050681120_re <= 1'd0;
-    builder_csrbank0_storage_csr_44050681120_we <= 1'd0;
+    builder_csrbank0_storage_csr_43974731040_re <= 1'd0;
+    builder_csrbank0_storage_csr_43974731040_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd13))) begin
-        builder_csrbank0_storage_csr_44050681120_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_44050681120_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_43974731040_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_43974731040_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_4404938608_r = builder_interface0_bank_bus_dat_w[9:0];
+assign builder_csrbank0_storage_csr_4397474128_r = builder_interface0_bank_bus_dat_w[9:0];
 always @(*) begin
-    builder_csrbank0_storage_csr_4404938608_re <= 1'd0;
-    builder_csrbank0_storage_csr_4404938608_we <= 1'd0;
+    builder_csrbank0_storage_csr_4397474128_re <= 1'd0;
+    builder_csrbank0_storage_csr_4397474128_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd14))) begin
-        builder_csrbank0_storage_csr_4404938608_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_4404938608_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_4397474128_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_4397474128_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_storage_csr_4404417680_r = builder_interface0_bank_bus_dat_w[31:0];
+assign builder_csrbank0_storage_csr_4397475984_r = builder_interface0_bank_bus_dat_w[31:0];
 always @(*) begin
-    builder_csrbank0_storage_csr_4404417680_re <= 1'd0;
-    builder_csrbank0_storage_csr_4404417680_we <= 1'd0;
+    builder_csrbank0_storage_csr_4397475984_re <= 1'd0;
+    builder_csrbank0_storage_csr_4397475984_we <= 1'd0;
     if ((builder_csrbank0 & (builder_interface0_bank_bus_adr[8:0] == 4'd15))) begin
-        builder_csrbank0_storage_csr_4404417680_re <= builder_interface0_bank_bus_we;
-        builder_csrbank0_storage_csr_4404417680_we <= builder_interface0_bank_bus_re;
+        builder_csrbank0_storage_csr_4397475984_re <= builder_interface0_bank_bus_we;
+        builder_csrbank0_storage_csr_4397475984_we <= builder_interface0_bank_bus_re;
     end
 end
-assign builder_csrbank0_mux_csr_44047266720_w = litescopesoc_litescopeanalyzer_mux_csrstorage0;
-assign builder_csrbank0_trigger_csr_44047276320_w = litescopesoc_litescopeanalyzer_trigger_csrstorage00;
-assign builder_csrbank0_trigger_csr_4404728272_w = litescopesoc_litescopeanalyzer_trigger_csrstatus00;
-assign litescopesoc_litescopeanalyzer_trigger_csrstatus01 = builder_csrbank0_trigger_csr_4404728272_we;
-assign builder_csrbank0_trigger_csr_44049367841_w = litescopesoc_litescopeanalyzer_trigger_csrstorage10[63:32];
-assign builder_csrbank0_trigger_csr_44049367840_w = litescopesoc_litescopeanalyzer_trigger_csrstorage10[31:0];
-assign builder_csrbank0_trigger_csr_44049370881_w = litescopesoc_litescopeanalyzer_trigger_csrstorage20[63:32];
-assign builder_csrbank0_trigger_csr_44049370880_w = litescopesoc_litescopeanalyzer_trigger_csrstorage20[31:0];
-assign builder_csrbank0_trigger_csr_4404728592_w = litescopesoc_litescopeanalyzer_trigger_csrstatus10;
-assign litescopesoc_litescopeanalyzer_trigger_csrstatus11 = builder_csrbank0_trigger_csr_4404728592_we;
-assign builder_csrbank0_subsampler_csr_44044179680_w = litescopesoc_litescopeanalyzer_subsampler_csrstorage0[15:0];
-assign builder_csrbank0_storage_csr_44047456160_w = litescopesoc_litescopeanalyzer_storage_csrstorage00;
-assign builder_csrbank0_storage_csr_4404938304_w = litescopesoc_litescopeanalyzer_storage_csrstatus00;
-assign litescopesoc_litescopeanalyzer_storage_csrstatus01 = builder_csrbank0_storage_csr_4404938304_we;
-assign builder_csrbank0_storage_csr_44047458880_w = litescopesoc_litescopeanalyzer_storage_csrstorage10[9:0];
-assign builder_csrbank0_storage_csr_44050681120_w = litescopesoc_litescopeanalyzer_storage_csrstorage20[9:0];
-assign builder_csrbank0_storage_csr_4404938608_w = litescopesoc_litescopeanalyzer_storage_csrstatus10[9:0];
-assign litescopesoc_litescopeanalyzer_storage_csrstatus11 = builder_csrbank0_storage_csr_4404938608_we;
-assign builder_csrbank0_storage_csr_4404417680_w = litescopesoc_litescopeanalyzer_storage_csrstatus20[31:0];
-assign litescopesoc_litescopeanalyzer_storage_csrstatus21 = builder_csrbank0_storage_csr_4404417680_we;
+assign builder_csrbank0_mux_csr_43972047520_w = litescopesoc_litescopeanalyzer_mux_csrstorage0;
+assign builder_csrbank0_trigger_csr_43972369440_w = litescopesoc_litescopeanalyzer_trigger_csrstorage00;
+assign builder_csrbank0_trigger_csr_4397238032_w = litescopesoc_litescopeanalyzer_trigger_csrstatus00;
+assign litescopesoc_litescopeanalyzer_trigger_csrstatus01 = builder_csrbank0_trigger_csr_4397238032_we;
+assign builder_csrbank0_trigger_csr_43972416161_w = litescopesoc_litescopeanalyzer_trigger_csrstorage10[63:32];
+assign builder_csrbank0_trigger_csr_43972416160_w = litescopesoc_litescopeanalyzer_trigger_csrstorage10[31:0];
+assign builder_csrbank0_trigger_csr_43972426401_w = litescopesoc_litescopeanalyzer_trigger_csrstorage20[63:32];
+assign builder_csrbank0_trigger_csr_43972426400_w = litescopesoc_litescopeanalyzer_trigger_csrstorage20[31:0];
+assign builder_csrbank0_trigger_csr_4397243728_w = litescopesoc_litescopeanalyzer_trigger_csrstatus10;
+assign litescopesoc_litescopeanalyzer_trigger_csrstatus11 = builder_csrbank0_trigger_csr_4397243728_we;
+assign builder_csrbank0_subsampler_csr_43974073760_w = litescopesoc_litescopeanalyzer_subsampler_csrstorage0[15:0];
+assign builder_csrbank0_storage_csr_43974690080_w = litescopesoc_litescopeanalyzer_storage_csrstorage00;
+assign builder_csrbank0_storage_csr_4397470224_w = litescopesoc_litescopeanalyzer_storage_csrstatus00;
+assign litescopesoc_litescopeanalyzer_storage_csrstatus01 = builder_csrbank0_storage_csr_4397470224_we;
+assign builder_csrbank0_storage_csr_43970250400_w = litescopesoc_litescopeanalyzer_storage_csrstorage10[9:0];
+assign builder_csrbank0_storage_csr_43974731040_w = litescopesoc_litescopeanalyzer_storage_csrstorage20[9:0];
+assign builder_csrbank0_storage_csr_4397474128_w = litescopesoc_litescopeanalyzer_storage_csrstatus10[9:0];
+assign litescopesoc_litescopeanalyzer_storage_csrstatus11 = builder_csrbank0_storage_csr_4397474128_we;
+assign builder_csrbank0_storage_csr_4397475984_w = litescopesoc_litescopeanalyzer_storage_csrstatus20[31:0];
+assign litescopesoc_litescopeanalyzer_storage_csrstatus21 = builder_csrbank0_storage_csr_4397475984_we;
 assign builder_sram0 = (builder_sram_bus_adr[13:9] == 2'd3);
 always @(*) begin
     builder_sram_bus_dat_r <= 32'd0;
@@ -1563,98 +1563,98 @@ always @(posedge sys_clk) begin
     if (builder_csrbank0) begin
         case (builder_interface0_bank_bus_adr[8:0])
             1'd0: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_mux_csr_44047266720_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_mux_csr_43972047520_w;
             end
             1'd1: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_44047276320_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_43972369440_w;
             end
             2'd2: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_4404728272_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_4397238032_w;
             end
             2'd3: begin
-                builder_interface0_bank_bus_dat_r <= litescopesoc_litescopeanalyzer_trigger_csr_4404856544_w;
+                builder_interface0_bank_bus_dat_r <= litescopesoc_litescopeanalyzer_trigger_csr_4397239440_w;
             end
             3'd4: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_44049367841_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_43972416161_w;
             end
             3'd5: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_44049367840_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_43972416160_w;
             end
             3'd6: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_44049370881_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_43972426401_w;
             end
             3'd7: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_44049370880_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_43972426400_w;
             end
             4'd8: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_4404728592_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_trigger_csr_4397243728_w;
             end
             4'd9: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_subsampler_csr_44044179680_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_subsampler_csr_43974073760_w;
             end
             4'd10: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_44047456160_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_43974690080_w;
             end
             4'd11: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4404938304_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4397470224_w;
             end
             4'd12: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_44047458880_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_43970250400_w;
             end
             4'd13: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_44050681120_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_43974731040_w;
             end
             4'd14: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4404938608_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4397474128_w;
             end
             4'd15: begin
-                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4404417680_w;
+                builder_interface0_bank_bus_dat_r <= builder_csrbank0_storage_csr_4397475984_w;
             end
         endcase
     end
-    if (builder_csrbank0_mux_csr_44047266720_re) begin
-        litescopesoc_litescopeanalyzer_mux_csrstorage0 <= builder_csrbank0_mux_csr_44047266720_r;
+    if (builder_csrbank0_mux_csr_43972047520_re) begin
+        litescopesoc_litescopeanalyzer_mux_csrstorage0 <= builder_csrbank0_mux_csr_43972047520_r;
     end
-    litescopesoc_litescopeanalyzer_mux_csrstorage1 <= builder_csrbank0_mux_csr_44047266720_re;
-    if (builder_csrbank0_trigger_csr_44047276320_re) begin
-        litescopesoc_litescopeanalyzer_trigger_csrstorage00 <= builder_csrbank0_trigger_csr_44047276320_r;
+    litescopesoc_litescopeanalyzer_mux_csrstorage1 <= builder_csrbank0_mux_csr_43972047520_re;
+    if (builder_csrbank0_trigger_csr_43972369440_re) begin
+        litescopesoc_litescopeanalyzer_trigger_csrstorage00 <= builder_csrbank0_trigger_csr_43972369440_r;
     end
-    litescopesoc_litescopeanalyzer_trigger_csrstorage01 <= builder_csrbank0_trigger_csr_44047276320_re;
-    litescopesoc_litescopeanalyzer_trigger_csrstatus02 <= builder_csrbank0_trigger_csr_4404728272_re;
-    if (builder_csrbank0_trigger_csr_44049367841_re) begin
-        litescopesoc_litescopeanalyzer_trigger_csrstorage10[63:32] <= builder_csrbank0_trigger_csr_44049367841_r;
+    litescopesoc_litescopeanalyzer_trigger_csrstorage01 <= builder_csrbank0_trigger_csr_43972369440_re;
+    litescopesoc_litescopeanalyzer_trigger_csrstatus02 <= builder_csrbank0_trigger_csr_4397238032_re;
+    if (builder_csrbank0_trigger_csr_43972416161_re) begin
+        litescopesoc_litescopeanalyzer_trigger_csrstorage10[63:32] <= builder_csrbank0_trigger_csr_43972416161_r;
     end
-    if (builder_csrbank0_trigger_csr_44049367840_re) begin
-        litescopesoc_litescopeanalyzer_trigger_csrstorage10[31:0] <= builder_csrbank0_trigger_csr_44049367840_r;
+    if (builder_csrbank0_trigger_csr_43972416160_re) begin
+        litescopesoc_litescopeanalyzer_trigger_csrstorage10[31:0] <= builder_csrbank0_trigger_csr_43972416160_r;
     end
-    litescopesoc_litescopeanalyzer_trigger_csrstorage11 <= builder_csrbank0_trigger_csr_44049367840_re;
-    if (builder_csrbank0_trigger_csr_44049370881_re) begin
-        litescopesoc_litescopeanalyzer_trigger_csrstorage20[63:32] <= builder_csrbank0_trigger_csr_44049370881_r;
+    litescopesoc_litescopeanalyzer_trigger_csrstorage11 <= builder_csrbank0_trigger_csr_43972416160_re;
+    if (builder_csrbank0_trigger_csr_43972426401_re) begin
+        litescopesoc_litescopeanalyzer_trigger_csrstorage20[63:32] <= builder_csrbank0_trigger_csr_43972426401_r;
     end
-    if (builder_csrbank0_trigger_csr_44049370880_re) begin
-        litescopesoc_litescopeanalyzer_trigger_csrstorage20[31:0] <= builder_csrbank0_trigger_csr_44049370880_r;
+    if (builder_csrbank0_trigger_csr_43972426400_re) begin
+        litescopesoc_litescopeanalyzer_trigger_csrstorage20[31:0] <= builder_csrbank0_trigger_csr_43972426400_r;
     end
-    litescopesoc_litescopeanalyzer_trigger_csrstorage21 <= builder_csrbank0_trigger_csr_44049370880_re;
-    litescopesoc_litescopeanalyzer_trigger_csrstatus12 <= builder_csrbank0_trigger_csr_4404728592_re;
-    if (builder_csrbank0_subsampler_csr_44044179680_re) begin
-        litescopesoc_litescopeanalyzer_subsampler_csrstorage0[15:0] <= builder_csrbank0_subsampler_csr_44044179680_r;
+    litescopesoc_litescopeanalyzer_trigger_csrstorage21 <= builder_csrbank0_trigger_csr_43972426400_re;
+    litescopesoc_litescopeanalyzer_trigger_csrstatus12 <= builder_csrbank0_trigger_csr_4397243728_re;
+    if (builder_csrbank0_subsampler_csr_43974073760_re) begin
+        litescopesoc_litescopeanalyzer_subsampler_csrstorage0[15:0] <= builder_csrbank0_subsampler_csr_43974073760_r;
     end
-    litescopesoc_litescopeanalyzer_subsampler_csrstorage1 <= builder_csrbank0_subsampler_csr_44044179680_re;
-    if (builder_csrbank0_storage_csr_44047456160_re) begin
-        litescopesoc_litescopeanalyzer_storage_csrstorage00 <= builder_csrbank0_storage_csr_44047456160_r;
+    litescopesoc_litescopeanalyzer_subsampler_csrstorage1 <= builder_csrbank0_subsampler_csr_43974073760_re;
+    if (builder_csrbank0_storage_csr_43974690080_re) begin
+        litescopesoc_litescopeanalyzer_storage_csrstorage00 <= builder_csrbank0_storage_csr_43974690080_r;
     end
-    litescopesoc_litescopeanalyzer_storage_csrstorage01 <= builder_csrbank0_storage_csr_44047456160_re;
-    litescopesoc_litescopeanalyzer_storage_csrstatus02 <= builder_csrbank0_storage_csr_4404938304_re;
-    if (builder_csrbank0_storage_csr_44047458880_re) begin
-        litescopesoc_litescopeanalyzer_storage_csrstorage10[9:0] <= builder_csrbank0_storage_csr_44047458880_r;
+    litescopesoc_litescopeanalyzer_storage_csrstorage01 <= builder_csrbank0_storage_csr_43974690080_re;
+    litescopesoc_litescopeanalyzer_storage_csrstatus02 <= builder_csrbank0_storage_csr_4397470224_re;
+    if (builder_csrbank0_storage_csr_43970250400_re) begin
+        litescopesoc_litescopeanalyzer_storage_csrstorage10[9:0] <= builder_csrbank0_storage_csr_43970250400_r;
     end
-    litescopesoc_litescopeanalyzer_storage_csrstorage11 <= builder_csrbank0_storage_csr_44047458880_re;
-    if (builder_csrbank0_storage_csr_44050681120_re) begin
-        litescopesoc_litescopeanalyzer_storage_csrstorage20[9:0] <= builder_csrbank0_storage_csr_44050681120_r;
+    litescopesoc_litescopeanalyzer_storage_csrstorage11 <= builder_csrbank0_storage_csr_43970250400_re;
+    if (builder_csrbank0_storage_csr_43974731040_re) begin
+        litescopesoc_litescopeanalyzer_storage_csrstorage20[9:0] <= builder_csrbank0_storage_csr_43974731040_r;
     end
-    litescopesoc_litescopeanalyzer_storage_csrstorage21 <= builder_csrbank0_storage_csr_44050681120_re;
-    litescopesoc_litescopeanalyzer_storage_csrstatus12 <= builder_csrbank0_storage_csr_4404938608_re;
-    litescopesoc_litescopeanalyzer_storage_csrstatus22 <= builder_csrbank0_storage_csr_4404417680_re;
+    litescopesoc_litescopeanalyzer_storage_csrstorage21 <= builder_csrbank0_storage_csr_43974731040_re;
+    litescopesoc_litescopeanalyzer_storage_csrstatus12 <= builder_csrbank0_storage_csr_4397474128_re;
+    litescopesoc_litescopeanalyzer_storage_csrstatus22 <= builder_csrbank0_storage_csr_4397475984_re;
     builder_sram1 <= builder_sram0;
     builder_interface1_bank_bus_dat_r <= 1'd0;
     if (builder_csrbank1) begin
@@ -1812,5 +1812,5 @@ assign litescopesoc_litescopeanalyzer_storage_asyncfifo_memory5 = mem_3_dat1;
 endmodule
 
 // -----------------------------------------------------------------------------
-//  Auto-Generated by LiteX on 2025-12-03 12:21:58.
+//  Auto-Generated by LiteX on 2025-12-04 11:10:19.
 //------------------------------------------------------------------------------
