@@ -9,6 +9,7 @@ from litex.soc.cores.clock import *
 from litex.soc.integration.soc import SoCRegion
 from litex.soc.integration.soc_core import *
 from litex.soc.integration.builder import *
+from litex.soc.interconnect.csr import *
 from litedram.modules import IS42S16160
 from litedram.phy import GENSDRPHY
 
@@ -65,12 +66,19 @@ class _CRG(Module):
         # 50MHz System Clock
         pll.create_clkout(self.cd_sys,    sys_clk_freq)
         
-        # 166MHz SDRAM Clock
+        # 50MHz SDRAM Clock (Sync with Sys)
         self.clock_domains.cd_sdram    = ClockDomain()
         self.clock_domains.cd_sdram_ps = ClockDomain(reset_less=True)
         
-        pll.create_clkout(self.cd_sdram,    166e6)
-        pll.create_clkout(self.cd_sdram_ps, 166e6, phase=270) # Phase shift for output
+        pll.create_clkout(self.cd_sdram,    50e6)
+        pll.create_clkout(self.cd_sdram_ps, 50e6, phase=90) # Phase shift for output
+
+        # Reset
+        try:
+            rst_pin = platform.request("rst")
+            self.comb += self.rst.eq(rst_pin)
+        except:
+            pass
         
         # Drive SDRAM clock pin
         self.specials += DDROutput(1, 0, platform.request("sdram_clock"), ClockSignal("sdram_ps"))
@@ -90,10 +98,10 @@ class BaseSoC(SoCCore):
         self.submodules.crg = _CRG(platform, sys_clk_freq)
         
         # SDRAM
-        self.submodules.sdrphy = GENSDRPHY(platform.request("sdram"), sys_clk_freq=166e6, cl=3)
+        self.submodules.sdrphy = GENSDRPHY(platform.request("sdram"), sys_clk_freq=50e6, cl=3)
         self.add_sdram("sdram",
             phy                     = self.sdrphy,
-            module                  = IS42S16160(166e6, "1:1"),
+            module                  = IS42S16160(50e6, "1:1"),
             origin                  = self.mem_map["main_ram"],
             size                    = 0x2000000, # 32MB
             l2_cache_size           = 8192,
@@ -101,6 +109,69 @@ class BaseSoC(SoCCore):
             l2_cache_reverse        = False
         )
         self.sdrphy.clock_domain = "sdram"
+        
+        # Unified Memory (Custom Module)
+        self.submodules.unified_memory = UnifiedMemory(platform)
+
+class UnifiedMemory(Module, AutoCSR):
+    def __init__(self, platform):
+        # Data Port CSRs
+        self.d_addr  = CSRStorage(32, description="Data Address")
+        self.d_wdata = CSRStorage(32, description="Data Write Data")
+        self.d_rdata = CSRStatus(32,  description="Data Read Data")
+        self.d_ctrl  = CSRStorage(4,  description="Data Control: [0]:REQ, [1]:WE, [3:2]:SIZE")
+        self.d_ack   = CSRStatus(1,   description="Data Acknowledge")
+
+        # Instruction Port CSRs
+        self.i_addr   = CSRStorage(32, description="Instruction Address")
+        self.i_req    = CSRStorage(1,  description="Instruction Request")
+        self.i_rdata0 = CSRStatus(32, description="Instruction Read Data [31:0]")
+        self.i_rdata1 = CSRStatus(32, description="Instruction Read Data [63:32]")
+        self.i_rdata2 = CSRStatus(32, description="Instruction Read Data [95:64]")
+        self.i_rdata3 = CSRStatus(32, description="Instruction Read Data [127:96]")
+        self.i_ack    = CSRStatus(1,  description="Instruction Acknowledge")
+
+        # Signals
+        d_rdata_sig = Signal(32)
+        d_ack_sig   = Signal()
+        i_rdata_sig = Signal(128)
+        i_ack_sig   = Signal()
+
+        # Connect Status
+        self.comb += [
+            self.d_rdata.status.eq(d_rdata_sig),
+            self.d_ack.status.eq(d_ack_sig),
+            self.i_rdata0.status.eq(i_rdata_sig[0:32]),
+            self.i_rdata1.status.eq(i_rdata_sig[32:64]),
+            self.i_rdata2.status.eq(i_rdata_sig[64:96]),
+            self.i_rdata3.status.eq(i_rdata_sig[96:128]),
+            self.i_ack.status.eq(i_ack_sig)
+        ]
+
+        # Add Source
+        platform.add_source("rtl/unified_memory.sv")
+
+        # Instantiate
+        self.specials += Instance("unified_memory",
+            p_MEM_SIZE_BYTES = 65536,
+            i_clk        = ClockSignal(),
+            i_rst        = ResetSignal(),
+
+            # Instruction Port
+            i_if_addr    = self.i_addr.storage,
+            i_if_req     = self.i_req.storage,
+            o_if_rdata   = i_rdata_sig,
+            o_if_ack     = i_ack_sig,
+
+            # Data Port
+            i_data_addr  = self.d_addr.storage,
+            i_data_wdata = self.d_wdata.storage,
+            i_data_size  = self.d_ctrl.storage[2:4],
+            i_data_we    = self.d_ctrl.storage[1],
+            i_data_req   = self.d_ctrl.storage[0],
+            o_data_rdata = d_rdata_sig,
+            o_data_ack   = d_ack_sig
+        )
 
 def main():
     platform = Platform()

@@ -1,2 +1,6 @@
 build
 .venv
+firmware/*.d
+firmware/*.o
+firmware/*.bin
+firmware/*.elf
